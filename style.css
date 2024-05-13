@@ -49,7 +49,7 @@ border-radius: 4px;
 cursor: pointer;
 }
 /*Main*/
-main h1 {
+main .about-text h1 {
   color: #fff;
 }
 main p {
