@@ -22,7 +22,7 @@ main .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #00ff08;
+  border:#00ff08;
 }
 /*Header*/
 header{
