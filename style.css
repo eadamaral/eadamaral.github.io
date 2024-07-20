@@ -1,20 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
 * {
+    font-family: "Roboto Flex", sans-serif;
     box-sizing: 0px;
     margin: 0 auto;
     padding: 0px;
     font-size: 1.2rem;
-    font-family: Roboto, sans-serif;
 
 }
 
-@font-face {
-    font-family: Roboto;
-    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300,400,500,700,900&display=swap");
-}
-
-
-header,
-main {
+header, main {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -43,7 +38,7 @@ main .container {
 
 .container .background-image {
     position: absolute;
-    filter: contrast(60%);
+    filter: brightness(50%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -84,14 +79,15 @@ header .perfil .foto {
 }
 
 header h1 {
-
+    font-family: "Roboto Serif", serif;
+    font-weight: 600;
     font-size: 1.8rem;
     color: white;
 }
 
 header h2 {
-
-    font-size: 0.8rem;
+    font-family: "Roboto Serif", serif;
+    font-size: 0.7rem;
     color: orange;
     padding: 0.2rem 0.3rem;
     opacity: 85%;
