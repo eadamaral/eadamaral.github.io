@@ -77,8 +77,8 @@ header .perfil .foto {
     display: flex;
     justify-content: end;
     background-color: #1e1e1e;
-    width: 140px;
-    margin: 20px;
+    width: 5rem;
+    margin: 5rem;
     border: solid 0.3rem #1e1e1e;
     border-radius: 100%;
 }
