@@ -52,6 +52,8 @@ main .codename {
     color: lightgray;
     text-align: justify;
 
+    overflow: hidden;
+    height: 80px;
 }
 
 main .about {
