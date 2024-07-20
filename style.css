@@ -1,5 +1,4 @@
-
-*{
+* {
     box-sizing: 0px;
     margin: 0 auto;
     padding: 0px;
@@ -7,13 +6,15 @@
     font-family: Roboto, sans-serif;
 
 }
+
 @font-face {
     font-family: Roboto;
     src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300,400,500,700,900&display=swap");
-  }
+}
 
 
-header, main {
+header,
+main {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -28,7 +29,7 @@ header .container {
     flex-direction: column;
     height: 300px;
     max-width: 1280px;
-    margin: 4px 4%;
+    margin: 0px 4%;
 }
 
 main .container {
@@ -53,47 +54,45 @@ main .container {
 }
 
 main .codename {
-    color: lightgray; 
-    text-align: justify; 
+    color: lightgray;
+    text-align: justify;
 
 }
 
 main .about {
-    color: #1e1e1e; 
-    text-align: justify;  
+    color: #1e1e1e;
+    text-align: justify;
 }
 
 header .perfil {
-    margin-top: 126px;
-    gap: 0.1rem;
+    margin-top: 6rem;
+    justify-content: end;
+    height: 300px;   
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 
 header .perfil .foto {
-    display: flex;
-    justify-content: end;
+    margin-top: 2.5rem;
     background-color: #1e1e1e;
-    width: 5rem;
-    margin: 5rem;
+    width: 7rem;
+    height: 7rem;
     border: solid 0.3rem #1e1e1e;
     border-radius: 100%;
 }
 
-.container h1 {
+header h1 {
 
     font-size: 1.8rem;
     color: white;
 }
 
-.container h2 {
+header h2 {
 
     font-size: 0.8rem;
     color: orange;
-    padding: 0.2rem 0.4rem;
+    padding: 0.2rem 0.3rem;
     opacity: 85%;
     background-color: #1e1e1e;
 }
