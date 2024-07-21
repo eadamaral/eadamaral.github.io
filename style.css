@@ -29,7 +29,6 @@ header .container {
 
 main .container {
     display: flex;
-    object-fit: cover;
     flex-direction: column;
     max-width: 1280px;
     margin: 4px 4%;
@@ -51,9 +50,65 @@ main .container {
 main .codename {
     color: lightgray;
     text-align: justify;
-
     overflow: hidden;
     height: 80px;
+}
+
+main .skill {
+    display: flex;
+    width: 100%;
+    flex-wrap: scroll;
+    overflow-x: auto;
+    text-align: center;
+}
+
+main .icons-design {
+    display: flex;
+    border-bottom: solid 0.2rem #0972EB;
+}
+main .icons-front {
+    display: flex;
+    border-bottom: solid 0.2rem #FF9D00;
+}
+main .icons-back {
+    display: flex;
+    border-bottom: solid 0.2rem #388E3C;
+}
+main .skill .icons-design .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .icon-skill {
+    width: 3.4rem;
+    height: 3.4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 80%;  
+    filter: grayscale(100%); 
+}
+
+main .icon-skill:hover {
+    width: 3.4rem;
+    height: 3.4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    opacity: 80%; 
+    filter: grayscale(0%); 
+    transition: 0.1s;
+}
+
+.skill p {
+    color: #FFFFFF;
+    font-size: 0.8rem;
+}
+
+.skill p:hover {
+    color: #1E1E1E;
+    font-size: 0.8rem;
 }
 
 main .about {
@@ -65,7 +120,7 @@ header .perfil {
     gap: 0.2rem;
     margin-top: 6rem;
     justify-content: end;
-    height: 300px;   
+    height: 300px;
     display: flex;
     flex-direction: column;
     position: relative;
