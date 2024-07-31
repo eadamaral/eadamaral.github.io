@@ -6,16 +6,14 @@
     margin: 0 auto;
     padding: 0px;
     font-size: 1.2rem;
+    color: #1e1e1e;
 
 }
 
 header, main {
-    display: flex;
     justify-content: center;
-    flex-direction: column;
     max-width: 1280px;
     margin: 0 auto;
-    gap: 2rem;
 }
 
 header .container {
@@ -24,15 +22,15 @@ header .container {
     flex-direction: column;
     height: 300px;
     max-width: 1280px;
-    margin: 0px 4%;
+    margin: 4px 4%;
 }
 
+/*TENTAR ARRUMAR AQUI*/
+
 main .container {
-    display: flex;
-    flex-direction: column;
+    height: 800px;
     max-width: 1280px;
     margin: 4px 4%;
-    gap: 2rem;
 }
 
 .container .background-image {
@@ -45,70 +43,63 @@ main .container {
     width: 100%;
     height: 300px;
     object-fit: cover;
+
 }
 
-main .codename {
+main .codename p {
+    display: flex;
     color: lightgray;
     text-align: justify;
     overflow: hidden;
     height: 80px;
 }
 
-main .skill {
-    display: flex;
-    width: 100%;
-    flex-wrap: scroll;
-    overflow-x: auto;
-    text-align: center;
+/*------------------------------------- skills*/
+
+main .skills {
+    display: grid;
+    grid-template-areas: "1 2 3 4";
+    /* display: flex;
+    flex-wrap: wrap;
+    width: 100%; */
+    column-gap: 1rem;
 }
 
-main .icons-design {
-    display: flex;
-    border-bottom: solid 0.2rem #0972EB;
-}
-main .icons-front {
-    display: flex;
-    border-bottom: solid 0.2rem #FF9D00;
-}
-main .icons-back {
-    display: flex;
-    border-bottom: solid 0.2rem #388E3C;
-}
-main .skill .icons-design .icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+main .education {
+    /* display: flex; */
+    border: solid 1px #9e9e9e;
+
+    width: 220px;
+    margin: 0.4rem;
+    line-height: 1rem;
+    font-size: 0.9rem;
+
 }
 
-main .icon-skill {
-    width: 3.4rem;
-    height: 3.4rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    opacity: 80%;  
-    filter: grayscale(100%); 
+/*----------------------------------------- icons */
+main .education i { 
+    color: orange;
+    font-size: 0.9rem;
 }
 
-main .icon-skill:hover {
-    width: 3.4rem;
-    height: 3.4rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-    opacity: 80%; 
-    filter: grayscale(0%); 
-    transition: 0.1s;
+main .education h3{
+    color: #3e3e3e;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+
 }
 
-.skill p {
-    color: #FFFFFF;
+
+main .education h4{
+    font-size: 0.6rem;
+    font-weight: normal;
+    color: #5e5e5e;
+}
+
+
+main .education h5{
     font-size: 0.8rem;
-}
-
-.skill p:hover {
-    color: #1E1E1E;
-    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
 }
 
 main .about {
@@ -149,4 +140,75 @@ header h2 {
     padding: 0.2rem 0.3rem;
     opacity: 85%;
     background-color: #1e1e1e;
+
+    overflow: hidden; /* Ensures the text is hidden while the animation occurs */
+    border-right: .15em solid orange; /* Creates the cursor effect */
+    white-space: nowrap; /* Keeps the text on a single line */
+    animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
 }
+
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+
+main .projects {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+main .projects img {
+    width: 5rem;
+    height: 5rem;
+}
+
+/* ----------------------------------------footer*/
+
+footer {
+    margin: 0 auto;
+}
+
+footer .container {
+
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+    height: 5rem;
+    color: #F1F1F1;
+    background-color: #1E1E1E;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #F2F2F2;
+
+}
+
+/* ------------------------------------------ Responsividade */
+
+@media (max-width: 1023px) {
+    main .skills {
+        display: grid;
+        grid-template-areas: "1 2";
+
+    }
+    main .education {
+        width: 100%;
+    }
+  }
+@media (max-width: 767px) {
+    main .skills {
+        display: grid;
+        grid-template-areas: "1 ";
+    }
+  }
